@@ -33,6 +33,7 @@ namespace JobsArgeya.Areas.Admin.Controllers
             string Host = Request.Host.ToString();
             ViewData["CmsSiteName"] = Details.GetSiteDetails(3, Host);
             ViewData["FavIcon"] = Details.GetSiteDetails(7, Host);
+            ViewData["DarkLogo"] = Details.GetSiteDetails(6, Host);
             List<MailSubscribers> dbSubscribers = _databaseContext.MailSubscribers.ToList();
             List<MailSubscribersModel> allSubscribers = new List<MailSubscribersModel>();
 

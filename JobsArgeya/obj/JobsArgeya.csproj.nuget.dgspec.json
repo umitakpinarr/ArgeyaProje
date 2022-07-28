@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\root\\Desktop\\Yeni klasör\\internProject-main\\JobsArgeya\\JobsArgeya.csproj": {}
+    "C:\\Users\\Sony\\Desktop\\internProject-main\\JobsArgeya\\JobsArgeya.csproj": {}
   },
   "projects": {
-    "C:\\Users\\root\\Desktop\\Yeni klasör\\internProject-main\\JobsArgeya\\JobsArgeya.csproj": {
+    "C:\\Users\\Sony\\Desktop\\internProject-main\\JobsArgeya\\JobsArgeya.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\root\\Desktop\\Yeni klasör\\internProject-main\\JobsArgeya\\JobsArgeya.csproj",
+        "projectUniqueName": "C:\\Users\\Sony\\Desktop\\internProject-main\\JobsArgeya\\JobsArgeya.csproj",
         "projectName": "JobsArgeya",
-        "projectPath": "C:\\Users\\root\\Desktop\\Yeni klasör\\internProject-main\\JobsArgeya\\JobsArgeya.csproj",
-        "packagesPath": "C:\\Users\\root\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\root\\Desktop\\Yeni klasör\\internProject-main\\JobsArgeya\\obj\\",
+        "projectPath": "C:\\Users\\Sony\\Desktop\\internProject-main\\JobsArgeya\\JobsArgeya.csproj",
+        "packagesPath": "C:\\Users\\Sony\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Sony\\Desktop\\internProject-main\\JobsArgeya\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\root\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Sony\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -97,7 +101,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.410\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
         }
       }
     }
