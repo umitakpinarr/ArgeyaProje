@@ -1,0 +1,49 @@
+﻿@model List<CompanyViewModel>
+@{
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    ViewData["CmsTitle"] = "Kullanıcı Oluştur";
+}
+<div class="col-12">
+    <div class="card">
+        <div class="card-body">
+            <form action="/admin/user/add" method="post">
+                <div class="form-group" style="margin-bottom:10px;">
+                    <label for="Email">Kullanıcı Adı</label>
+                    <input class="form-control" name="Email" id="Email" type="text" placeholder="Kullanıcı Adı">
+                </div>
+                <div class="form-group" style="margin-bottom:10px;">
+                    <label for="Name">Adı</label>
+                    <input class="form-control" name="Name" id="Name" type="text" placeholder="Adı">
+                </div>
+                <div class="form-group" style="margin-bottom:10px;">
+                    <label for="Surname">Soyadı</label>
+                    <input class="form-control" name="Surname" id="Surname" type="text" placeholder="Soyadı">
+                </div>
+                <div class="form-group" style="margin-bottom:10px;">
+                    <label for="Password">Şifre</label>
+                    <div class="input-group input-group-merge">
+                        <input type="password" id="Password" name="Password" class="form-control" placeholder="Şifre giriniz..">
+                        <div class="input-group-append" data-password="false">
+                            <div class="input-group-text">
+                                <span class="password-eye"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group" style="margin-bottom: 10px;">
+                    <label for="CompanyId">Şirket</label>
+                    <select name="CompanyId" id="CompanyId" class="form-control">
+                        <option selected>Lütfen Seçim Yapınız !</option>
+                        @foreach (CompanyViewModel Company in Model)
+                        {
+                            <option value="@Company.Id">@Company.CompanyName - @Company.CompanyDomain</option>
+                        }
+                    </select>
+                </div>
+                <br />
+                <button type="submit" class="btn btn-danger w-100">Kullanıcı Oluştur</button>
+            </form>
+
+        </div>
+    </div>
+</div>
